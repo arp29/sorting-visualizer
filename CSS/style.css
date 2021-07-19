@@ -1,0 +1,18 @@
+.title{
+    margin: auto;
+    text-decoration: lawngreen;
+    text-align: center;
+    color: rgb(28, 10, 49);
+    
+}
+.jumbotron{
+    background-color: rgba(173, 173, 173, 0.514);
+}
+.algo{
+    color: lightslategrey;
+    display: block;
+    margin: auto;
+}
+a{
+    color: rgb(247, 247, 247);
+}
