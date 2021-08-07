@@ -5,7 +5,7 @@ let i=0,
 var song;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song=loadSound("mymusic.mp3",loaded);
+  //song=loadSound("mymusic.mp3",loaded);
   if(windowWidth>400 && windowWidth<1000)
     u=5;
   else if(windowWidth<=400)
@@ -30,14 +30,17 @@ function draw() {
       swap(a,j,j+1);
     }
 
-  
+  //let flag=0;
   
   for (k = 0; k < width / u; k++) {
     if(k==j)
       fill(100,200,0);
-    else if(k==j+1)
-      fill(200,100,0);
-    else
+    else if(k==j+1 || k>width/u-i-1)
+      {
+        fill(150,100,0);
+        //flag=1;
+      } 
+      else
       fill(255);
     rect(w, 0, u, a[k]);
     w = w + u;

@@ -18,10 +18,10 @@ function setup() {
   }
   
 }
-function loaded()
+/*function loaded()
 {
     song.play();
-}
+}*/
 function draw() {
   background(0);
   if(i==1)
@@ -51,7 +51,7 @@ function draw() {
          i=i+1;
          j=i-1;
          key=a[i];
-         song=loadSound("music/beep-06.mp3",loaded);
+         //song=loadSound("music/beep-06.mp3",loaded);
          //Delaytime(0.01);
         }
       j=j-1;
@@ -63,7 +63,7 @@ function draw() {
   
 }
 
-function mousePressed()
+/*function mousePressed()
 {
   song.pause();
-}
+}*/

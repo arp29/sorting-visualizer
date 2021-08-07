@@ -17,12 +17,12 @@ function setup() {
   quickSort(a,0,a.length-1);
 }
 
-function loaded()
+/*function loaded()
 {
     song.play();
     song.setVolume(0.5);
     //song1.play();
-}
+}*/
 
 async function quickSort(arr,start,end)
 {
@@ -80,14 +80,14 @@ async function swap(arr, a, b) {
   let temp = arr[a];
   arr[a] = arr[b];
   arr[b] = temp;
-  song=loadSound("music/beep-06.mp3",loaded);
+  //song=loadSound("music/beep-06.mp3",loaded);
   
 }
 
-function mousePressed()
+/*function mousePressed()
 {
   song.pause();
-}
+}*/
 
 function sleep(ms)
 {

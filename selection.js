@@ -6,7 +6,6 @@ let i=0,
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  //song=loadSound("mymusic.mp3",loaded);
   if(windowWidth>400 && windowWidth<1000)
     u=5;
   else if(windowWidth<=400)
@@ -18,12 +17,7 @@ function setup() {
   }
  
 }
-function loaded()
-{
-    song.play();
-    song.setVolume(0.5);
-    //song1.play();
-}
+
 function draw() {
   background(0);
   if(a[j]<a[minidx])
@@ -59,7 +53,6 @@ function draw() {
           i=i+1;
           j=i+1;
           minidx=i;
-          //song1=loadSound("music/beep-02.mp3",loaded);
         }
     }
   else
@@ -75,11 +68,7 @@ function swap(arr, a, b) {
   let temp = arr[a];
   arr[a] = arr[b];
   arr[b] = temp;
-  song=loadSound("music/beep-06.mp3",loaded);
+
   
 }
 
-function mousePressed()
-{
-  song.pause();
-}

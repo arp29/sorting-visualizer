@@ -12,7 +12,13 @@
     color: lightslategrey;
     display: block;
     margin: auto;
+    
+
+}
+.row{
+    margin: 50px;
 }
 a{
     color: rgb(247, 247, 247);
 }
+
