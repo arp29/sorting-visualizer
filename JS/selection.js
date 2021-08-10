@@ -6,10 +6,8 @@ let i=0,
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  if(windowWidth>400 && windowWidth<1000)
+  if(windowWidth<1000)
     u=5;
-  else if(windowWidth<=400)
-    u=10;
   else
     u=20;
   for (k = 0; k <floor(width / u); k++) {
