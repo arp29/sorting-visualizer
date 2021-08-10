@@ -27,7 +27,7 @@ function draw() {
  
   
   
-  for (k = 0; k < width / u -1; k++) {
+  for (k = 0; k < width / u; k++) {
     if(k==j)
       fill(200,0,0);
     else if(k==i)
@@ -47,7 +47,7 @@ function draw() {
         {
          a[j+1]=key;
          i=i+1;
-         j=i-1;
+         j=i;
          key=a[i];
          //song=loadSound("music/beep-06.mp3",loaded);
          //Delaytime(0.01);
